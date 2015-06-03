@@ -1,0 +1,288 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import 'vars';
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  background-color: $body-bg;
+}
+
+img {
+  max-width: $max-width;
+}
+
+article {
+  background-color: $white;
+  width: $max-width;
+  min-width: $max-width;
+  max-width: $max-width;
+  padding-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+nav {
+  width: $max-width;
+  position: fixed;
+  top: 0;
+  padding: $medium-spacing $small-spacing $tiny-spacing;
+  font-family: $sans-sarif-font;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: $nav-bg;
+  transition: opacity 0.5s, padding 0.5s;
+
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    width: 234px;
+    margin-left: $small-spacing;
+    opacity: 0;
+  }
+
+  ul {
+    float: right;
+    @include clearfix;
+    li {
+      display: inline-block;
+      margin: $small-spacing;
+      text-transform: uppercase;
+      border-right: 1px solid black;
+      padding-right: $big-spacing;
+      &:last-of-type {
+        border: 0;
+        margin-right: 0
+      }
+      a {
+        color: black;
+      }
+    }
+  }
+
+  body.scrolling & {
+    padding: $tiny-spacing $tiny-spacing 0;
+    opacity: .95;
+    img {
+      transition: opacity 1s;
+      opacity: 1;
+    }
+  }
+}
+
+/* Custom page header */
+.header {
+  background-color: $nav-bg;
+  text-align: center;
+  // to handle white flicker that happens with nav animation on scroll up
+  margin-top: -$big-spacing;
+  padding-top: $huge-spacing;
+  padding-bottom: $huge-spacing;
+}
+
+.getting-married {
+  background-image: url("../images/married.jpg");
+  background-size: $max-width;
+  height: 433px;
+}
+
+.region-map {
+  background-image: url("../images/glen_muse.png");
+  background-size: $max-width;
+  height: 700px;
+}
+
+.travel-map {
+  background-image: url("../images/travel_map.png");
+  background-size: $max-width;
+  height: 400px;
+}
+
+
+.bullet {
+  span {
+    display: inline-block;
+    background-color: $black;
+    border-radius: 50%;
+    text-align: center;
+    color: $white;
+    height: $huge-spacing;
+    width: $huge-spacing;
+    padding-top: 3px;
+    padding-left: 2px;
+    font-family: $slab-font;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+p + .bullet {
+  margin-top: $mega-spacing;
+}
+
+section {
+  text-align: center;
+  font-family: $serif-font;
+  padding: $big-spacing ($mega-spacing * 3);
+  background-color: $white;
+
+  img {
+    margin: $big-spacing 0;
+  }
+
+  h2 {
+    font-family: $slab-font;
+    font-size: 31px;
+    text-transform: uppercase;
+    margin: $huge-spacing 0;
+  }
+
+  h3 {
+    font-family: $pretty-font;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: $huge-spacing;
+
+    span {
+      font-family: $handwritting-font;
+    }
+  }
+
+  h4 {
+    background-color: $black;
+    color: $white;
+    padding: $small-spacing $medium-spacing;
+    margin-top: ($mega-spacing*2);
+    display: inline-block;
+    font-family: $slab-font;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  img + h3 {
+    margin-top: 0;
+  }
+
+  p + img {
+    margin-top: ($mega-spacing * 2);
+  }
+
+  p + p {
+    margin-top: $huge-spacing;
+  }
+
+  p + h2 {
+    margin-top: ($huge-spacing * 2);
+  }
+
+  &.featured {
+    background-color: $alt-bg;
+    h3 {
+      margin-bottom: $medium-spacing;
+    }
+  }
+
+  &.travel {
+    padding-top: $mega-spacing;
+    h3 {
+      text-transform: none;
+    }
+  }
+
+  &.travel + &.featured {
+    margin-top: $mega-spacing;
+  }
+
+  &.gifts {
+    background-color: $alt-bg;
+    img + p {
+      margin-top: $mega-spacing;
+    }
+
+    .option {
+      text-align: left;
+      margin-left: 13%;
+      margin-bottom: $big-spacing;
+
+      font-family: $slab-font;
+      font-size: 20px;
+      font-weight: bold;
+
+      .bullet {
+        display: inline-block;
+        margin-right: $small-spacing;
+      }
+
+      p {
+        margin-left: 45px;
+        font-family: $serif-font;
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+
+  }
+}
+
+form {
+  margin: $huge-spacing 0;
+  text-align: left;
+  label {
+    text-transform: uppercase;
+    font-family: $sans-sarif-font;
+  }
+
+  input, textarea, select {
+    @extend .form-control;
+    font-family: $sans-sarif-font;
+  }
+
+  input[type="submit"] {
+    background-color: lighten($black, 20%);
+    color: $white;
+    text-transform: uppercase;
+    font-family: $slab-font;
+  }
+
+  .has-error label {
+    color: darkred;
+  }
+
+  #rsvp & {
+   .attending, .guest {
+     display: none;
+   }
+
+   &.is_attending {
+    .attending {
+      display: block;
+    }
+   }
+   &.has_guest {
+     .guest {
+       display: block;
+     }
+   }
+  }
+}

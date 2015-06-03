@@ -1,0 +1,27 @@
+$max-width: 768px;
+
+// fonts
+
+$pretty-font: 'Poiret One';
+$slab-font: 'Slabo 13px';
+$serif-font: 'Libre Baskerville';
+$sans-sarif-font: 'Lato';
+$handwritting-font: 'Amatic SC';
+
+// spacing
+
+$tiny-spacing: 5px;
+$small-spacing: 10px;
+$medium-spacing: 15px;
+$big-spacing: 20px;
+$huge-spacing: 30px;
+$mega-spacing: 40px;
+
+
+// colors
+
+$black: #000;
+$white: #fff;
+$nav-bg: #E8E8E8;
+$alt-bg: #F5F5F5;
+$body-bg: darken($white, 12%);
