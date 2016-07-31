@@ -1,2 +1,0 @@
-# tintron
-Friends wedding website
