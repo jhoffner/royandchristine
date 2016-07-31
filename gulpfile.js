@@ -130,5 +130,5 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages())
+    .pipe(ghPages({force: true}))
 });
