@@ -16,69 +16,33 @@ $.fn.serializeObject = function()
   return o;
 };
 
-$(function() {
-  $(window).scroll(function updateBodyClasses() {
-    setClass('body', 'scrolling', window.scrollY > 150);
-  }).scroll();
-});
-
-
 function setClass(el, className, present) {
   $(el)[present ? 'addClass' : 'removeClass'](className);
 }
 
+function isPhone() {
+  return $(window).width() <= 420;
+}
+
 function goto(id, offset) {
-  $.scrollTo(id, 500, {offset: offset || -60, easing: 'swing'})
+  offset = offset || isPhone() ? -80 : -50
+  $.scrollTo(id, 500, {offset: offset, easing: 'swing'});
 }
 
+// Initialize scrolling behaviors
+$(function() {
+  $(window).scroll(function updateBodyClasses() {
+    var h = $(window).height() - 110;
+    setClass('body', 'scrolling', window.scrollY >= h);
 
-// Parse Initialize
-Parse.initialize("2b3PmoTwQyVTrAQnVBK8ZDIiWhsbUg1KQlxczhIJ", "WEkQ8CclHvIbD3fFSOMf6bFsCfExpiQu0uterfbe");
+    if (window.scrollY < h / 2 && !isPhone()) {
+      console.log(h);
+      $('header').css('background-position-y', (window.scrollY / 10) * -1);
+    }
+  }).scroll();
 
-// RSVP
-
-var RSVP = Parse.Object.extend("RSVP");
-
-$('form').submit(function(e) {
-  e.preventDefault();
-  data = $('form').serializeObject();
-
-  $('.has-error').removeClass('has-error');
-  var errors = false;
-
-  if (!data.name) {
-    $('[name=name]').closest('.form-group').addClass('has-error');
-    errors = true;
-  }
-
-  if (!data.attending) {
-    $('[name=attending]').closest('.form-group').addClass('has-error');
-    errors = true;
-  }
-
-  if (!errors) {
-    var rsvp = new RSVP()
-    rsvp.save(data, {
-      success: function (object) {
-        $('form').hide();
-        $('.success').show();
-      },
-      error: function (model, error) {
-        alert(error);
-      }
-    });
-  }
+  $(".fancybox").fancybox({scrolling: 'yes'});
 });
-
-function changeToggle(selector, className) {
-  $(selector).change(function(e) {
-    setClass('form', className, $(this).val() == 'yes');
-    //$.scrollTo('input[type=submit]', 500, {offset: 0});
-  }).change();
-}
-
-changeToggle('[name=attending]', 'is_attending');
-changeToggle('[name=guest]', 'has_guest');
 
 
 

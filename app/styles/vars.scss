@@ -1,12 +1,7 @@
-$max-width: 768px;
-
 // fonts
 
-$pretty-font: 'Poiret One';
-$slab-font: 'Slabo 13px';
-$serif-font: 'Libre Baskerville';
-$sans-sarif-font: 'Lato';
-$handwritting-font: 'Amatic SC';
+$serif-font: 'Arvo';
+$sans-sarif-font: 'Oswald';
 
 // spacing
 
@@ -21,7 +16,12 @@ $mega-spacing: 40px;
 // colors
 
 $black: #000;
+$off-black: #444;
 $white: #fff;
+$off-white: #f6f6f6;
+$red: #DE2222;
+$dark-red: #8C1616;
+$green: green;
 $nav-bg: #E8E8E8;
 $alt-bg: #F5F5F5;
-$body-bg: darken($white, 12%);
+$body-bg: $white;

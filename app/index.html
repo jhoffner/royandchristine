@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Roy + Christine 2017</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link href='http://fonts.googleapis.com/css?family=Lato: 100,300,400|Poiret+One|Libre+Baskerville|Amatic+SC|Slabo+13px' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Arvo:400,700' rel='stylesheet' type='text/css'>
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -16,6 +16,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -27,264 +28,229 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <article>
-      <nav>
-        <img src="images/jacob_jennifer.svg">
+    <header>
+      <h1><span>Roy + Christine</span></h1>
+      <h2><span>February 25, 2017 &#8226; Cabrillo Pavilion Art Center &#8226; Santa barbara, CA</span></h2>
+    </header>
+    <nav>
+      <div class="container">
         <ul>
-          <li class="active"><a onclick="goto('#schedule')">Schedule</a></li>
-          <li><a onclick="goto('#travel')">Travel</a></li>
-          <li><a onclick="goto('#gifts')">Gifts</a></li>
+          <li class="active"><a onclick="goto('#our_story')">Our Story</a></li>
+          <li class="separator"></li>
+          <li><a onclick="goto('#gallery')">Gallery</a></li>
+          <li class="separator hidden-xs"></li>
+          <li><a onclick="goto('#where_and_when')">Where & When</a></li>
+          <li class="separator"></li>
+          <li><a onclick="goto('#accomodations')">Accomodations</a></li>
+          <li class="separator hidden-xs"></li>
+          <li><a onclick="goto('#registry')">Registry</a></li>
+          <li class="separator"></li>
           <li><a onclick="goto('#rsvp')">RSVP</a></li>
         </ul>
 
-      </nav>
-      <div class="header">
-        <img src="images/jacob_jennifer.svg">
       </div>
-      <div class="getting-married"></div>
-      <div class="region-map"></div>
-      <section class="featured">
-        <img src="images/hosted.svg">
-      </section>
-      <section id="schedule">
-        <img src="images/schedule.svg">
-        <h2>Thursday, Oct 8th</h2>
-        <img src="images/arrival.svg">
-        <h3>Arrivals</h3>
-        <p>
-          For those traveling from out-of-state, it is recommended that you arrive on Thursday night so that you will be able to take part of the activities the next day.
-        </p>
-        <p>
-          Many of us traveling from Los Angeles will be arriving Thursday night at the venue to start setting up and pre-partying for the weekend. For travelers coming in early on Thursday you are welcome to join us at the estate after you check-in to your hotels.
-        </p>
-      </section>
-      <section>
 
-        <h2>Friday, Oct 9th</h2>
-        <img src="images/pool.svg">
-        <h3>Pool Party <span>@ 11 AM</span></h3>
-        <p>
-          Its fall but it will still be warm enough in beautiful Ojai to take part in a bunch of outdoors fun. We will be hanging out by the pool and doing a bunch of fun activites.
-        </p>
-        <p>
-          We will have snacks to munch on throughout the day. We recommend that you eat a hearty breakfast before the party. You should bring your swim suite and sneakers if you want to play Basketball. Please remember to bring a beach towel with you if you plan to lay out.
-        </p>
+    </nav>
 
-        <img src="images/henna.svg">
-        <h3>Henna Party <span>@ 6:30 PM</span></h3>
-        <p>
-          Jennifer’s family will be providing a Bengali style celebration not to be missed. You can expect dinner, entertainment, Henna tattoos and more.
-        </p>
-        <p>
-          If you have proper Indian attire then please bring it with you. The family will also be providing Sarees and Sherwanis to guests so that everyone can take part in the celebration.
-        </p>
-      </section>
-      <section>
-        <h2>Saturday, Oct 9th</h2>
-
-        <img src="images/hanging.svg" />
-        <h3>Hanging Out <span>@ 11 AM</span></h3>
-        <p>We will be hanging out at the estate during the morning/afternoon. We will have some activities setup for those of us who wish to be crafty. Everyone else can just relax and swap stories from the previous night’s awesomeness.</p>
-
-        <img src="images/ceremony.svg" />
-        <h3>Seal The Deal <span>@ 5 PM</span></h3>
-        <p>The ceremony will be held on the lower lawn of the estate. It is a short walk down and back. </p>
-        <p>For those who decide to hang back at their hotel until the ceremony starts: We will be providing a shuttle service from the Blue Iguana Inn from 4PM - 4:40 PM.</p>
-
-        <img src="images/drinks.svg"/>
-        <h3>Pre-Gaming <span>@ 5:45</span></h3>
-        <p>Drinks will be served at the circular bar which is available both inside and outside of the house.</p>
-
-        <img src="images/reception.svg"/>
-        <h3>Reception <span>@ 7 PM</span></h3>
-        <p>The vows have been said and the crowd has been properly liquired up. Its now time to rock out. Dinner will be served on the pool patio, followed by indoor dancing and general drunkedness.</p>
-      </section>
-      <section>
-        <h2>Sunday, Oct 10th</h2>
-
-        <img src="images/breakfast.svg" />
-        <h3>Breakfast <span>@ 9 AM</span></h3>
-        <p>Check-out time from the estate is at 12 PM. We will be providing a continental breakfast at the property before then to help everyone move pass their hangovers.</p>
-      </section>
-
-      <section class="featured" id="travel">
-        <img src="images/travel_badge.svg"/>
-        <img src="images/travel_information.svg"/>
-      </section>
-      <div class="travel-map"></div>
-      <section class="featured">
-        <img src="images/sleep.svg"/>
-        <h3>Sleep</h3>
-      </section>
-      <section class="travel">
-
-        <div class="bullet"><span>A</span></div>
-        <h3>Blue Iguana Inn & Suites</h3>
-        <p>15 rooms have been blocked out at a rate of $169 a night. If you intend on staying here please book soon as we will not be able to hold the rooms up until the event. On the day of the reception we will be organizing shuttles to the venue from here.</p>
-
-        <div class="bullet"><span>B</span></div>
-        <h3>Ojai Valley Inn & Spa</h3>
-        <p>Rooms have not been blocked out but should be available. Ojai is considerably more expensive but is an amazing place to lay your head. We stayed here for our anniversery one year and loved it. Shuttles will also be available here.</p>
-
-        <h4>Other Options</h4>
-        <h3>AirBnb</h3>
-        <p>For those of you traveling in groups, you may find the best deal on AirBnb. We literally vagabonded for 6 months using AirBnb a few years ago and can attest to how well it works.</p>
-      </section>
-      <section class="featured">
-        <img src="images/air.svg" />
-        <h3>Air</h3>
-      </section>
-      <section>
-        <h2>Santa Barbara (SBA)</h2>
-        <p>If you can swing it SBA will be the best airport to fly into. It is about 50 minutes away from Ojai. For those flying in on Thursday night, we may be able to arrange someone to pick you up from the airport. Please reach out to us and we will see if we can accomodate you.</p>
-
-        <h2>Los Angeles (LAX)</h2>
-        <p>LAX is about 90 minutes away from Ojai without traffic. Its LA, there is usually traffic, so unless you are flying in late at night you will probably want to budget about 2 hours of driving time. </p>
-        <p>LAX will be your cheapest option. For family flying from Baltimore, Jennifer’s father will be able to organize a group discount that as of now is $377 round-trip for 5 or more people. Spirit airlines may also be an ever more cost efficient option. If you consider flying Spirit please take note of why its costs are lower and make sure you will not incure additional costs (such as carry on baggage).</p>
-        <p>Group travel into LAX is highly recommended as you will be able to save money by carpooling. </p>
-      </section>
-      <section class="featured">
-        <img src="images/car.svg"/>
-        <h3>Road</h3>
-      </section>
-      <section>
-        <h2>Parking</h2>
-        <p>The estate has limited parking and will likely be mostly taken by the guests who will be sleeping at the estate. For this reason we will need to carpool whenever possible when traveling to and from hotels. </p>
-
-        <h2>Shuttles</h2>
-        <p>A limited shuttle service will be available to guests on the day of the wedding. We have the shuttle for 3 hours and will have specific windows in which it will take guests to and from the venue.</p>
-
-        <h2>Uber</h2>
-        <p>Uber X is available in Ojai and will be a great way to get around without having to worry about parking, shuttle times or drunk driving. The hotels are very close to the property so with enough cordination from other guests (ride sharing) the costs should be minimal.</p>
-      </section>
-      <section class="gifts" id="gifts">
-        <img src="images/gifts.svg"/>
-        <p>We don't need you to bring us gifts – we know plane tickets are expensive and your presence at the wedding is enough! If you really want to give us something, a contribution to our honeymoon fund would be greatly appreciated.</p>
-        <h2>Ways to send moola</h2>
-        <div class="option">
-          <div class="bullet"><span>1</span></div>
-          Hand deliver a check at the wedding
+    <article>
+      <section id="our_story">
+        <div class="container">
+          <h2>Our Story</h2>
+          <p>Roy and Christine met in junior college in 2008. They were both science majors so it made sense that they would cross paths in biology, chemistry or physics, but instead they met in Spanish 1. Yes, they hola'd and buenos dias'd enough on their tests to pass and make it all the way to Spanish numero dos. At the time RateMyProfessor was the Yelp of every college campus and Roy used this to influence Christine to switch their current class to a more relaxed non-homework assigning professor. They started carpooling with each other after they found out they both lived a mere 1.7 miles from one another and developed a solid friendship. When they weren't in class they hung out or were constantly texting and emailing each other, until they both realized the friendship had changed. </p>
+          <p>In June of '09 Christine invited Roy to a friend's birthday celebration and after some liquid courage they both finally admitted they had feelings for each other. Flash forward (through birthdays, weddings, vacations, Coachella, both of them getting into a Radiology program) to the night of August 30, 2015 when Roy and Christine were hanging out with a couple friends in Palos Verdes and decided to go the hiking trails near the cliffside. After hiking away from their friends Roy stopped close to the edge of the cliff, kneeled down on one knee and proposed. After Christine accepted he lifted her in to the air which freaked her out because she could see the ocean at the bottom. Presently Roy and Christine plan on celebrating their union together with all of their loved ones together in Santa Barbara, CA on February 25th, 2017.</p>
         </div>
-        <div class="option">
-          <div class="bullet"><span>2</span></div>
-          Send us money electronically
-          <p>
-            <a href="http://www.venmo.com">Venmo</a>,
-            <a href="https://cash.me/about">Square Cash</a>
-            or <a href="https://www.paypal.com/us/webapps/mpp/send-money-online">Paypal</a>
-            to Jake's phone number or email (jake.hoffner@gmail.com).
-          </p>
+      </section>
+
+      <section id="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <p>Some of our photos over the last 7 years:</p>
+
+          <div class="gallery">
+            <a class="fancybox" rel="group" href="../images/gallery/1.jpg"><div class="photo-item" style="background-image:url(../images/gallery/1.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/2.jpg"><div class="photo-item" style="background-image:url(../images/gallery/2.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/3.jpg"><div class="photo-item" style="background-image:url(../images/gallery/3.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/4.jpg"><div class="photo-item" style="background-image:url(../images/gallery/4.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/5.jpg"><div class="photo-item" style="background-image:url(../images/gallery/5.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/6.jpg"><div class="photo-item" style="background-image:url(../images/gallery/6.jpg);background-position-y:-60px;"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/7.jpg"><div class="photo-item" style="background-image:url(../images/gallery/7.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/8.jpg"><div class="photo-item" style="background-image:url(../images/gallery/8.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/9.jpg"><div class="photo-item" style="background-image:url(../images/gallery/9.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/10.jpg"><div class="photo-item" style="background-image:url(../images/gallery/10.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/11.jpg"><div class="photo-item" style="background-image:url(../images/gallery/11.jpg);background-position-y:-60px;"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/12.jpg"><div class="photo-item" style="background-image:url(../images/gallery/12.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/13.jpg"><div class="photo-item" style="background-image:url(../images/gallery/13.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/14.jpg"><div class="photo-item" style="background-image:url(../images/gallery/14.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/16.jpg"><div class="photo-item" style="background-image:url(../images/gallery/16.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/17.jpg"><div class="photo-item" style="background-image:url(../images/gallery/17.jpg);background-position-x:-70px;"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/18.jpg"><div class="photo-item" style="background-image:url(../images/gallery/18.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/19.jpg"><div class="photo-item" style="background-image:url(../images/gallery/19.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/20.jpg"><div class="photo-item" style="background-image:url(../images/gallery/20.jpg);background-position-x:-100px;"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/21.jpg"><div class="photo-item" style="background-image:url(../images/gallery/21.jpg)"></div></a>
+            <a class="fancybox" rel="group" href="../images/gallery/22.jpg"><div class="photo-item" style="background-image:url(../images/gallery/22.jpg)"></div></a>
+          </div>
+
+        </div>
+      </section>
+      <section id="where_and_when">
+        <div class="container">
+          <h2>Where <span class="is-red">&</span> When</h2>
+
+          <div class="info-legend">
+            <div class="flex-cell">
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+              Santa Barbara
+            </div>
+            <div class="flex-cell">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              February 25, 2017
+            </div>
+            <div class="flex-cell">
+              <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+              Five Thirty in the Evenining
+            </div>
+          </div>
+
+          <div class="info-content">
+            <div class="info-content-details">
+              <h3>
+                <span class="glyphicon glyphicon-heart"></span>
+                Ceremony:
+              </h3>
+              <p>
+                Santa Barbara City College <br>
+                The Great Meadow - West Campus <br>
+                721 Cliff Dr, Santa Barbara, CA 93109
+              </p>
+
+              <h3>
+                <span class="glyphicon glyphicon-cutlery"></span>
+                Reception:
+              </h3>
+              <p>
+                Cabrillo Paviolion Arts Center <br>
+                1118 E Cabrillo Blvd <br>
+                Santa Barbara, CA 93103
+              </p>
+            </div>
+            <div class="info-content-map">
+              <img src="../images/map2.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="accomodations">
+        <div class="container">
+          <h2>Accomodations</h2>
+          <div class="info-content">
+            <div class="flex-cell">
+              <h3>
+                <span class="glyphicon glyphicon-home"></span>
+                Hyatt Centric Santa Barbara
+              </h3>
+              <p>1111 E Cabrillo Blvd, Santa Barbara, CA 93103</p>
+              <a class="btn" href="https://aws.passkey.com/event/15339895/owner/2500566/home">Click to Book</a>
+            </div>
+            <div class="flex-cell">
+              <h3>
+                <span class="glyphicon glyphicon-home"></span>
+                Santa Barbara Beach Motel 6
+              </h3>
+              <p>
+                443 Corona Del Mar, Santa Barbara, CA 93103 <br>
+                Roy And Christine 2017 Group<br>
+                <b>Group No:</b> M00010411<br>
+                <b>Group Sales Dept:</b> (800) 544-4866<br>
+              </p>
+            </div>
+            <div class="flex-cell">
+              <h3>
+                <span class="glyphicon glyphicon-home"></span>
+                Best Western
+              </h3>
+              <p>
+                336 W Cabrillo Blvd, Santa Barbara, CA 93101 <br>
+                (805) 965-6556
+              </p>
+
+            </div>
+            <div class="flex-cell">
+              <h3>
+                <span class="glyphicon glyphicon-info-sign"></span>
+                Santa Barbara HotSpots
+              </h3>
+              <p>
+                Offering free travel services. <br>
+                They can help you book a hotel room in Santa Barbara.<br>
+                (800) 793-7666
+              </p>
+
+            </div>
+          </div>
         </div>
       </section>
       <section id="rsvp">
-        <img src="images/rsvp.svg" />
-        <form>
-          <div class="form-group ">
-            <label class="required">Your Name</label>
-            <input type="text" name="name" placeholder="Please provide your full name">
-          </div>
-          <div class="form-group">
-            <label>Will you be attending?</label>
-            <select name="attending">
-              <option></option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
-          <div class="attending">
-            <div class="form-group">
-              <label>Your email address</label>
-              <input type="email" name="email">
-            </div>
-            <div class="form-group">
-              <label>You're dinner preference?</label>
-              <select name="dinner">
-                <option></option>
-                <option value="No Preference">No Preference</option>
-                <option value="Vegeterian">Vegeterian</option>
-              </select>
-            </div>
-            <div class="form-group" id="guest">
-              <label>Will you be bringing a guest?</label>
-              <select name="guest">
-                <option></option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="form-group guest">
-              <label>What is your guest's name?</label>
-              <input type="text" name="guest_name">
-            </div>
-            <div class="form-group guest">
-              <label>You're guest's dinner preference?</label>
-              <select name="guest_dinner">
-                <option></option>
-                <option value="No Preference">No Preference</option>
-                <option value="Vegeterian">Vegeterian</option>
-              </select>
+        <div class="container">
+          <h2>RSVP</h2>
+          <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSfLn-kc_KBNlrXHqeVTQu9NtwTJvavbrsArcRDXljB6bPcz3g/formResponse">
+            <div class="flex-row">
+
+              <div class="flex-cell">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" name="entry.558206669" required/>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" class="form-control" id="email" name="entry.1289482711" required/>
+                </div>
+                <div class="form-group">
+                  <label>I am bringing</label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input class="form-control" type="checkbox" name="entry.997116795" value="Spouse"> My Spouse
+                  </label>
+                  <label>
+                    <input class="form-control" type="checkbox" name="entry.997116795" value="Kids"> My Kids
+                  </label>
+                </div>
+              </div>
+              <div class="flex-cell">
+                <div class="form-group">
+                  <label>Leave Your Message</label>
+                  <textarea class="form-control" name="entry.809611945"></textarea>
+                </div>
+              </div>
             </div>
 
-            <div class="form-group" id="guest">
-              <label>When can we expect you to arrive?</label>
-              <select name="arrival">
-                <option></option>
-                <option value="thurs">Thursday Night</option>
-                <option value="fri_morning">Friday Morning</option>
-                <option value="fri_evening">Friday Evening</option>
-                <option value="sat">Saturday</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Please provide a song to add to our playlist</label>
-              <input type="text" name="song" placeholder="Artist / Song">
-            </div>
-          </div>
+            <button class="btn" type="submit">
+              <span class="glyphicon glyphicon-send"></span>
+              Send
+            </input>
+          </form>
 
-          <div class="form-group">
-            <label>Any additional notes?</label>
-            <textarea name="notes"></textarea>
-          </div>
-          <input type="submit">
-
-        </form>
-        <div class="success" style="display:none;">
-          <img src="images/confetti.svg" />
-          <h3>RSVP Sent!</h3>
         </div>
       </section>
-      <section class="featured">
-        <img src="images/H.svg"/>
-      </section>
-    </div>
+    </article>
 
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
+    <script src="/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
